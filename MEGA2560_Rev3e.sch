@@ -15989,7 +15989,6 @@ ARDUINO and other Arduino brands and logos and Trademarks of Arduino SA. All Ard
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="ON" library="Opto" deviceset="0043_KPT-2012SGC" device="" value="Green"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="D1" library="Diodi" deviceset="0020_M7" device="" value="M7"/>
 <part name="X1" library="SmartPrj" deviceset="POWERSUPPLY_DC21MM" device="X"/>
 <part name="FD1" library="SmartPrj" deviceset="FIDUCIALMOUNT" device=""/>
@@ -16081,6 +16080,7 @@ ARDUINO and other Arduino brands and logos and Trademarks of Arduino SA. All Ard
 <part name="C16" library="Condensatori" deviceset="0015_100NF_0603" device="" value="100nF"/>
 <part name="U$1" library="Arduino-utility" deviceset="A3-FRAME" device="" value="DNP"/>
 <part name="U$2" library="Arduino-utility" deviceset="A3-FRAME" device="" value="DNP"/>
+<part name="RN6" library="Resistenze" deviceset="0016_064R_10K_/_CAY16-103J4LF" device="" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -16240,9 +16240,6 @@ ARDUINO and other Arduino brands and logos and Trademarks of Arduino SA. All Ard
 <instance part="GND14" gate="1" x="231.14" y="226.06" smashed="yes" rot="R90">
 <attribute name="VALUE" x="233.68" y="223.52" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+5" gate="1" x="185.42" y="236.22" smashed="yes">
-<attribute name="VALUE" x="187.325" y="238.76" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="D1" gate="G$1" x="55.88" y="226.06" smashed="yes">
 <attribute name="NAME" x="58.42" y="226.5426" size="1.778" layer="95"/>
 <attribute name="VALUE" x="58.42" y="223.7486" size="1.778" layer="96"/>
@@ -16375,9 +16372,9 @@ ARDUINO and other Arduino brands and logos and Trademarks of Arduino SA. All Ard
 <attribute name="NAME" x="40.64" y="46.99" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="34.925" y="49.53" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="IC7" gate="A" x="175.26" y="218.44" smashed="yes">
-<attribute name="NAME" x="177.8" y="221.615" size="1.778" layer="95"/>
-<attribute name="VALUE" x="177.8" y="213.36" size="1.778" layer="96"/>
+<instance part="IC7" gate="A" x="175.26" y="223.52" smashed="yes">
+<attribute name="NAME" x="177.8" y="226.695" size="1.778" layer="95"/>
+<attribute name="VALUE" x="177.8" y="218.44" size="1.778" layer="96"/>
 </instance>
 <instance part="D3" gate="G$1" x="266.7" y="241.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="262.1026" y="243.84" size="1.778" layer="95" rot="R270"/>
@@ -16461,6 +16458,13 @@ ARDUINO and other Arduino brands and logos and Trademarks of Arduino SA. All Ard
 <attribute name="VALUE" x="77.47" y="31.75" size="1.778" layer="96"/>
 </instance>
 <instance part="IC7" gate="P" x="11.43" y="29.21" smashed="yes"/>
+<instance part="RN6" gate="A" x="137.16" y="246.38"/>
+<instance part="RN6" gate="B" x="137.16" y="241.3"/>
+<instance part="RN6" gate="C" x="137.16" y="236.22"/>
+<instance part="RN6" gate="D" x="137.16" y="231.14" smashed="yes">
+<attribute name="VALUE" x="139.7" y="228.092" size="1.778" layer="96"/>
+<attribute name="NAME" x="132.08" y="228.092" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16471,12 +16475,6 @@ ARDUINO and other Arduino brands and logos and Trademarks of Arduino SA. All Ard
 <wire x1="309.88" y1="220.98" x2="297.18" y2="220.98" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <pinref part="ICSP" gate="A" pin="2"/>
-</segment>
-<segment>
-<wire x1="185.42" y1="226.06" x2="205.74" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="233.68" x2="185.42" y2="226.06" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
-<pinref part="RN3" gate="A" pin="1"/>
 </segment>
 <segment>
 <wire x1="101.6" y1="223.52" x2="101.6" y2="226.06" width="0.1524" layer="91"/>
@@ -17660,7 +17658,7 @@ ARDUINO and other Arduino brands and logos and Trademarks of Arduino SA. All Ard
 <wire x1="215.9" y1="175.26" x2="241.3" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="180.34" x2="215.9" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="180.34" x2="215.9" y2="180.34" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="220.98" x2="167.64" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="220.98" x2="167.64" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="208.28" x2="160.02" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="208.28" x2="160.02" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="208.28" x2="210.82" y2="180.34" width="0.1524" layer="91"/>
@@ -17706,11 +17704,11 @@ ARDUINO and other Arduino brands and logos and Trademarks of Arduino SA. All Ard
 </net>
 <net name="L13" class="0">
 <segment>
-<wire x1="167.64" y1="215.9" x2="165.1" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="220.98" x2="165.1" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="215.9" x2="165.1" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="210.82" x2="185.42" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="210.82" x2="185.42" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="218.44" x2="182.88" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="218.44" x2="182.88" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="218.44" x2="195.58" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="218.44" x2="195.58" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="215.9" x2="205.74" y2="215.9" width="0.1524" layer="91"/>
@@ -17768,6 +17766,13 @@ ARDUINO and other Arduino brands and logos and Trademarks of Arduino SA. All Ard
 <pinref part="RN5" gate="C" pin="1"/>
 <pinref part="RN5" gate="D" pin="2"/>
 <pinref part="IC7" gate="B" pin="+IN"/>
+</segment>
+</net>
+<net name="N$1" class="3">
+<segment>
+<wire x1="185.42" y1="226.06" x2="205.74" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="233.68" x2="185.42" y2="226.06" width="0.1524" layer="91"/>
+<pinref part="RN3" gate="A" pin="1"/>
 </segment>
 </net>
 </nets>

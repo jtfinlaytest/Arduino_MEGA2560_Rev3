@@ -8803,6 +8803,14 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER-PN" value="DNP" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="NOTE" value="DNP" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
+<element name="RN6" library="Resistenze" package="CAY16" value="10k" x="-76.708" y="-50.038">
+<attribute name="CASE" value="SMD_3,2x1,6" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NUMBER" value="064R_10K_/_CAY16-103J4LF" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="Resistenze" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
+<attribute name="MONTHLY_USAGE" value="_____" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="_____" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="_____" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="+5V" class="3">
@@ -8829,7 +8837,6 @@ design rules under a new name.</description>
 <contactref element="RN5" pad="8"/>
 <contactref element="RN1" pad="7"/>
 <contactref element="RN1" pad="6"/>
-<contactref element="RN3" pad="1"/>
 <contactref element="IC6" pad="1"/>
 <contactref element="IC6" pad="3"/>
 <contactref element="IC7" pad="8"/>
@@ -8923,7 +8930,6 @@ design rules under a new name.</description>
 <wire x1="31.623" y1="13.208" x2="31.623" y2="12.573" width="1.27" layer="1"/>
 <wire x1="24.638" y1="40.132" x2="26.416" y2="40.132" width="0.3048" layer="1"/>
 <wire x1="26.416" y1="40.132" x2="26.738" y2="40.513" width="0.3048" layer="1"/>
-<wire x1="26.738" y1="40.513" x2="27.265" y2="40.57" width="0.3048" layer="1"/>
 <wire x1="57.023" y1="26.67" x2="52.959" y2="22.606" width="0.508" layer="1"/>
 <wire x1="28.067" y1="28.067" x2="27.94" y2="27.94" width="0.6096" layer="1"/>
 <wire x1="54.737" y1="34.163" x2="54.991" y2="34.163" width="1.27" layer="1"/>
@@ -9089,6 +9095,19 @@ design rules under a new name.</description>
 <wire x1="47.2948" y1="22.3012" x2="47.2948" y2="21.519" width="0.508" layer="1"/>
 <wire x1="47.2948" y1="21.519" x2="47.3" y2="21.5138" width="0.508" layer="1"/>
 <wire x1="30.48" y1="4.7498" x2="30.6832" y2="4.953" width="0.4064" layer="16"/>
+<wire x1="8.89" y1="29.21" x2="8.89" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="11.7348" y1="17.78" x2="14.478" y2="21.336" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="19.685" x2="9.271" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="8.89" y1="15.875" x2="9.271" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="8.255" y1="13.97" x2="8.89" y2="15.875" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="13.97" x2="8.255" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="4.445" y1="13.97" x2="6.35" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="13.97" x2="4.445" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="8.255" y1="22.225" x2="8.89" y2="19.685" width="0" layer="19" extent="1-1"/>
+<wire x1="6.35" y1="22.225" x2="8.255" y2="22.225" width="0" layer="19" extent="1-1"/>
+<wire x1="4.445" y1="22.225" x2="6.35" y2="22.225" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="22.225" x2="4.445" y2="22.225" width="0" layer="19" extent="1-1"/>
+<wire x1="5.537" y1="17.78" x2="9.271" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND" class="2">
 <contactref element="ICSP" pad="6"/>
@@ -11332,6 +11351,9 @@ design rules under a new name.</description>
 <wire x1="43.6352" y1="37.8988" x2="42.7736" y2="38.7604" width="0.508" layer="1"/>
 <wire x1="42.7736" y1="38.7604" x2="41.9096" y2="38.7604" width="0.508" layer="1"/>
 <wire x1="41.9096" y1="38.7604" x2="41.6864" y2="38.8296" width="0.508" layer="1"/>
+</signal>
+<signal name="N$1" class="3">
+<contactref element="RN3" pad="1"/>
 </signal>
 </signals>
 </board>
