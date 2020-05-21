@@ -1,7 +1,7 @@
 version: 1
 eagle:
   drc:
-    - file: MEGA2560_Rev3e.brd
+    - file: src/MEGA2560_Rev3e.brd
       dru: default
   erc:
     - file: MEGA2560_Rev3e.sch
