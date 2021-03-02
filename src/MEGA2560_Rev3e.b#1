@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mil" altunit="mil"/>
@@ -8134,14 +8133,10 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
-<param name="checkStop" value="0"/>
-<param name="checkValues" value="0"/>
-<param name="checkNames" value="1"/>
-<param name="checkWireStubs" value="1"/>
-<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -8807,6 +8802,14 @@ design rules under a new name.</description>
 <attribute name="MANUFACTURER" value="DNP" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER-PN" value="DNP" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="NOTE" value="DNP" x="0" y="0" size="1.778" layer="27" display="off"/>
+</element>
+<element name="RN6" library="Resistenze" package="CAY16" value="10k" x="-76.708" y="-50.038">
+<attribute name="CASE" value="SMD_3,2x1,6" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
+<attribute name="PART_NUMBER" value="064R_10K_/_CAY16-103J4LF" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
+<attribute name="TYPE" value="Resistenze" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
+<attribute name="MONTHLY_USAGE" value="_____" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="_____" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER" value="_____" x="-76.708" y="-50.038" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -11353,13 +11356,6 @@ design rules under a new name.</description>
 <contactref element="RN3" pad="1"/>
 </signal>
 </signals>
-<mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
-<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
-<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
-<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
-</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>
