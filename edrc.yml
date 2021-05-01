@@ -1,5 +1,0 @@
-version: 1
-eagle:
-  drc:
-    - file: src/MEGA2560_Rev3e.brd
-      dru: oshpark-4layer
