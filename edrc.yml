@@ -2,4 +2,4 @@ version: 1
 eagle:
   drc:
     - file: src/MEGA2560_Rev3e.brd
-      dru: default
+      dru: oshpark-2layer
